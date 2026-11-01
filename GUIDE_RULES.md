@@ -84,7 +84,7 @@ scripts/check-menus.js         메뉴 데이터 검사. 성공 "[통과] 메뉴 
 ## 5. 파일과 페이지 형식
 
 - **mkdocs.yml, docs/index.md, docs/setup/*, docs/appendix/*, GUIDE_RULES.md, starter/는 수정하지 않는다.** nav의 파일 이름 그대로 만든다.
-- 이미지 캡처는 없다. 대신 **메뉴 경로를 굵게 순서대로** 쓴다: **Settings** → **Collaborators** → **Add people**. 버튼과 메뉴 이름은 GitHub 영어 화면 그대로 쓰고, 처음 나올 때 괄호로 뜻을 단다: **Commit changes**(변경 저장).
+- 이미지 캡처는 기본으로 넣지 않는다. 화면이 복잡해 글로 설명하기 어려운 곳만 **강사가 준 캡처**를 `docs/images/classN/`에 넣고, 빨간 테두리와 번호(①②…)를 붙인 뒤 바로 아래 번호별 표로 설명한다 (예: 1-3 커밋 상세 화면). 그 밖에는 **메뉴 경로를 굵게 순서대로** 쓴다: **Settings** → **Collaborators** → **Add people**. 버튼과 메뉴 이름은 GitHub 영어 화면 그대로 쓰고, 처음 나올 때 괄호로 뜻을 단다: **Commit changes**(변경 저장).
 - GitHub 화면이 한국어가 아니라 영어라는 점을 전제로 한다.
 
 ### 교안 페이지 (`classN/index.md`)
