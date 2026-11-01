@@ -1,9 +1,9 @@
 site_name: GitHub 기초 실습 가이드 (GH-900)
 site_description: GitHub 기초 과정 교안과 실습 가이드
 site_author: 스킬잇 김누리
-site_url: https://skilleat-labs.github.io/gihub-900-lab/
-repo_url: https://github.com/skilleat-labs/gihub-900-lab
-repo_name: skilleat-labs/gihub-900-lab
+site_url: https://skilleat-labs.github.io/github-900-lab/
+repo_url: https://github.com/skilleat-labs/github-900-lab
+repo_name: skilleat-labs/github-900-lab
 edit_uri: ""
 
 theme:
