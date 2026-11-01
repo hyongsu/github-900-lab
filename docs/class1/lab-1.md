@@ -69,13 +69,18 @@
     ```
 
 5. 아직 저장된 게 아닙니다. 화면 오른쪽 위의 초록색 **Commit changes...**(변경 저장) 버튼을 클릭합니다.
-6. **Commit changes** 대화상자가 열립니다. **Commit message** 칸의 기본값 `Update README.md`를 지우고 아래처럼 씁니다.
+6. **Commit changes** 대화상자가 열립니다. **Commit message** 칸의 기본값을 지우고 아래처럼 씁니다. 기본값은 `Update README.md`이거나, Copilot이 만들어 준 문장(칸 아래에 `Message and description suggested by Copilot.`)일 수 있습니다. **Extended description** 칸에 영어 문장이 미리 들어 있으면 그것도 지웁니다. 오늘은 메시지를 직접 씁니다.
 
     ```text
     README에 소개 한 줄 추가
     ```
 
-7. 아래 선택지가 **Commit directly to the `main` branch**인지 확인하고, 초록색 **Commit changes** 버튼을 클릭합니다.
+7. 아래 두 선택지 중 **Commit directly to the `main` branch**가 골라져 있는지 확인하고, 초록색 **Commit changes** 버튼을 클릭합니다.
+
+    | 선택지 | 뜻 | 언제 쓰나 |
+    |---|---|---|
+    | **Commit directly to the `main` branch** | 원본(`main`)에 바로 커밋합니다. 누르는 즉시 리포지토리에 반영됩니다 | 혼자 쓰는 연습 리포지토리. **1~2교시는 이것만 씁니다** |
+    | **Create a new branch for this commit and start a pull request** | 원본은 그대로 두고, 사본(분기)을 새로 만들어 거기에 커밋한 뒤 검토 요청(Pull Request)을 엽니다 | 여럿이 쓰는 리포지토리에서 동료 검토를 받을 때. 3교시에 해 봅니다 |
 
 확인: README.md 화면으로 돌아오고, 내용 위 회색 줄에 내 아이디, `README에 소개 한 줄 추가`, `now`(방금)가 보입니다.
 
