@@ -51,7 +51,7 @@ flowchart LR
     | `is:closed` | 닫힌 것 전부 (병합된 것 + 병합하지 않고 닫은 것) |
     | `author:@me` | 내가 만든 것만 (`@me`는 로그인한 나) |
 
-    필터는 띄어쓰기로 여러 개를 이어 쓸 수 있습니다. 예: `is:pr is:merged author:@me`
+    필터는 띄어쓰기로 여러 개를 이어 쓸 수 있고, 이은 조건을 모두 만족하는 것만(AND) 남깁니다. 예: `is:pr is:merged author:@me`
 
 ## 결과 남기기
 

@@ -203,7 +203,9 @@ STEP 3~4를 반복해 두 번째 이슈를 등록합니다.
 | `milestone:MVP` | MVP 마일스톤에 묶인 것 |
 | `assignee:@me` | 내가 담당자인 것 |
 
-조건은 띄어쓰기로 여러 개 이어 쓸 수 있습니다. 예: `is:issue is:open label:기능 assignee:@me`
+조건은 띄어쓰기로 여러 개 이어 쓸 수 있습니다. 띄어쓰기로 이은 조건은 **모두 만족하는 것만**(AND) 남깁니다. 예: `is:issue is:open label:기능 assignee:@me`는 "이슈이면서, 열려 있고, 기능 라벨이 있고, 내가 담당자인 것"입니다.
+
+둘 중 하나만 만족해도 되게(OR) 찾으려면 괄호 안에 대문자 `OR`를 씁니다. 예: `is:issue (label:기능 OR label:질문)`
 
 ## STEP 7. 이슈 닫기
 
