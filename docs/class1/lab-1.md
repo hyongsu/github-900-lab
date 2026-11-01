@@ -52,29 +52,30 @@
 ## STEP 3. 첫 화면에서 커밋 1개 확인하기
 
 1. 파일 목록에 `README.md` 하나만 있는지 봅니다.
-2. 파일 목록 바로 위 회색 줄을 봅니다. 왼쪽에는 내 아이디와 `Initial commit`이라는 메시지가, 오른쪽 끝에는 시계 아이콘과 함께 **1 Commit**이 보입니다.
+2. 파일 목록 바로 위 회색 줄을 봅니다. 왼쪽에는 내 아이디와 `Initial commit`이라는 메시지가, 오른쪽 끝에는 시계 아이콘과 함께 **1 Commit**이 보입니다. 지금은 **눈으로만** 봅니다. `Initial commit`이나 7자리 번호를 클릭하면 그 커밋 시점의 보기 전용 화면으로 들어가서, 다음 STEP에서 연필 아이콘이 보이지 않습니다.
 3. 파일 목록 아래에 README 내용이 펼쳐져 있습니다. 지금은 `my-first-repo`라는 제목 한 줄뿐입니다.
 
 확인: **1 Commit**입니다. 리포지토리를 만든 순간 README를 넣은 커밋 1개가 생겼습니다. 작성자는 나, 메시지는 GitHub가 넣은 `Initial commit`입니다.
 
 ## STEP 4. README 고치고 커밋하기
 
-1. 파일 목록에서 **README.md**를 클릭합니다.
-2. 파일 내용 위쪽 오른편의 **연필 아이콘**(마우스를 올리면 `Edit this file`)을 클릭합니다.
-3. 편집 칸이 열립니다. 첫 줄 `# my-first-repo` 끝을 클릭하고 ++enter++ 를 두 번 누른 뒤, 아래 문장을 입력합니다.
+1. 위쪽 리포지토리 이름 `my-first-repo`를 한 번 클릭해 첫 화면으로 갑니다. 그다음 파일 목록에서 **README.md**를 클릭합니다.
+2. 왼쪽 위 분기 선택 상자에 **`main`**이 보이는지 확인합니다. `95531ef`처럼 7자리 번호가 보이면 과거 시점 화면이라 고칠 수 없습니다. 분기 선택 상자를 눌러 **main**을 고릅니다.
+3. 파일 내용 위쪽 오른편, **Raw** 버튼 옆의 **연필 아이콘**(마우스를 올리면 `Edit this file`)을 클릭합니다.
+4. 편집 칸이 열립니다. 첫 줄 `# my-first-repo` 끝을 클릭하고 ++enter++ 를 두 번 누른 뒤, 아래 문장을 입력합니다.
 
     ```text
     GitHub 첫 연습입니다. 고치고 커밋하면 기록이 남는지 확인합니다.
     ```
 
-4. 아직 저장된 게 아닙니다. 화면 오른쪽 위의 초록색 **Commit changes...**(변경 저장) 버튼을 클릭합니다.
-5. **Commit changes** 대화상자가 열립니다. **Commit message** 칸의 기본값 `Update README.md`를 지우고 아래처럼 씁니다.
+5. 아직 저장된 게 아닙니다. 화면 오른쪽 위의 초록색 **Commit changes...**(변경 저장) 버튼을 클릭합니다.
+6. **Commit changes** 대화상자가 열립니다. **Commit message** 칸의 기본값 `Update README.md`를 지우고 아래처럼 씁니다.
 
     ```text
     README에 소개 한 줄 추가
     ```
 
-6. 아래 선택지가 **Commit directly to the `main` branch**인지 확인하고, 초록색 **Commit changes** 버튼을 클릭합니다.
+7. 아래 선택지가 **Commit directly to the `main` branch**인지 확인하고, 초록색 **Commit changes** 버튼을 클릭합니다.
 
 확인: README.md 화면으로 돌아오고, 내용 위 회색 줄에 내 아이디, `README에 소개 한 줄 추가`, `now`(방금)가 보입니다.
 
@@ -115,6 +116,9 @@
 
 ??? failure "첫 화면에 파일이 없고 Quick setup 명령어만 보입니다"
     STEP 2에서 **Add README**를 켜지 않은 경우입니다. 화면의 **creating a new file** 또는 **README** 링크를 눌러 `README.md`를 만들고 커밋하면 됩니다. 이 경우 STEP 4까지 마치면 커밋 수가 2가 아니라 1일 수 있습니다. 괜찮습니다.
+
+??? failure "README.md 화면에 연필 아이콘이 없습니다"
+    왼쪽 위 분기 선택 상자를 봅니다. `main`이 아니라 `95531ef` 같은 7자리 번호가 보이면, 회색 줄의 `Initial commit`이나 번호를 눌러 **과거 시점의 보기 전용 화면**에 들어온 것입니다. 분기 선택 상자를 눌러 **main**을 고르거나, 위쪽 리포지토리 이름 `my-first-repo`를 클릭한 뒤 README.md를 다시 엽니다. 연필 아이콘은 파일 내용 위쪽 오른편 **Raw** 버튼 옆에 있습니다.
 
 ??? failure "Commit changes 버튼이 회색이라 눌리지 않습니다"
     아무것도 고치지 않은 상태입니다. 편집 칸에 문장이 들어갔는지 확인합니다.

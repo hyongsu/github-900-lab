@@ -143,7 +143,7 @@
 ## 막히면
 
 ??? failure "연필 아이콘이 안 보입니다"
-    폴더 목록 화면에 있는 경우입니다. menus.json 파일 이름을 클릭해 **파일 내용이 보이는 화면**으로 들어가야 연필 아이콘이 보입니다. Starter(`skilleat-labs/lunch-picker-starter`) 화면에 있으면 편집 권한이 없어 "Fork this repository" 안내가 나옵니다. 주소창이 내 `lunch-practice`인지 확인합니다.
+    왼쪽 위 분기 선택 상자에 `main` 대신 7자리 번호가 보이면 과거 시점의 보기 전용 화면입니다. 분기 선택 상자에서 **main**을 고릅니다. 아니라면 폴더 목록 화면에 있는 경우입니다. menus.json 파일 이름을 클릭해 **파일 내용이 보이는 화면**으로 들어가야 연필 아이콘이 보입니다. Starter(`skilleat-labs/lunch-picker-starter`) 화면에 있으면 편집 권한이 없어 "Fork this repository" 안내가 나옵니다. 주소창이 내 `lunch-practice`인지 확인합니다.
 
 ??? failure "웹페이지에 메뉴가 하나도 안 보입니다"
     menus.json을 고치다가 쉼표, 따옴표, 중괄호를 건드린 경우입니다. menus.json을 열고 김치찌개 줄이 위 "고친 뒤" 코드와 글자 하나까지 같은지 비교해 고친 뒤 다시 커밋합니다.
