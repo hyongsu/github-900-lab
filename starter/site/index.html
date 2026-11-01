@@ -70,7 +70,7 @@
         : "조건에 맞는 메뉴가 없습니다.";
     });
 
-    fetch("menus.json").then((r) => r.json()).then((data) => { menus = data; render(); });
+    fetch("menus.json", { cache: "no-store" }).then((r) => r.json()).then((data) => { menus = data; render(); });
   </script>
 </body>
 </html>
