@@ -22,7 +22,7 @@
     https://github.com/skilleat-labs/lunch-picker-starter
     ```
 
-2. 화면 위쪽에 `skilleat-labs / lunch-picker-starter`라는 이름과 **Public template**이라는 표시가 보이는지 확인합니다. `skilleat-labs`는 교안에서 본 조직 계정입니다.
+2. 화면 위쪽에 `skilleat-labs / lunch-picker-starter`라는 이름과 **Public template**이라는 표시가 보이는지 확인합니다. `skilleat-labs`는 강사가 실습 자료를 올려 둔 계정입니다.
 
 확인: 파일 목록 위쪽 오른편에 초록색 **Use this template**(이 템플릿 사용) 버튼이 보입니다.
 
