@@ -174,6 +174,11 @@ Starter에는 `main`에 커밋이 생기면 `site/` 폴더를 웹페이지로 �
 ??? failure "Run workflow 버튼이 안 보입니다"
     왼쪽 목록에서 **웹페이지 배포**를 클릭하지 않고 **All workflows**에 머물러 있는 경우입니다. 왼쪽에서 **웹페이지 배포**를 먼저 클릭합니다. Actions 탭에 "Workflows aren't being run on this repository" 같은 안내와 초록 버튼이 보이면 **I understand my workflows, go ahead and enable them**을 눌러 켠 뒤 다시 시도합니다.
 
+??? failure "Pages를 켰는데 Actions에 아직 Get Pages site failed 오류가 보입니다"
+    지금 보고 있는 것이 **리포지토리를 만들 때 돈 예전 실행 기록**(`Initial commit`)인지 확인합니다. Pages를 켠다고 예전 기록이 다시 실행되지는 않습니다. 그 기록은 빨간 X로 남겨 두고, STEP 5대로 **웹페이지 배포** → **Run workflow**를 눌러 **새 실행**을 만듭니다. 목록 맨 위에 새 기록이 생겨 초록 체크가 되면 성공입니다.
+
+    같은 화면의 `Node.js 20 is deprecated`, `The ubuntu-latest label will migrate` 같은 노란 경고는 GitHub가 보내는 안내 문구입니다. 실패 원인이 아니니 무시합니다.
+
 ??? failure "Run workflow를 눌렀는데 또 빨간 X입니다"
     **Settings** → **Pages**의 Source가 `GitHub Actions`로 바뀌었는지 다시 확인합니다. 바뀌어 있다면 빨간 X 실행 기록을 클릭하고, 오른쪽 위 **Re-run jobs** → **Re-run all jobs**를 눌러 한 번 더 실행합니다.
 
