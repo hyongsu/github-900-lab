@@ -258,8 +258,8 @@ flowchart LR
 
     **`MVP 보드` 만들기**
 
-    1. **+ New view** → 새 뷰 탭 **▼** → **Layout** → **Board**를 클릭합니다.
-    2. 같은 **▼** 메뉴 → **Column by** → **MoSCoW**를 클릭합니다.
+    1. **+ New view** → 검색창 오른쪽 톱니바퀴 **View options**(뷰 설정) → **Layout** → **Board**를 클릭합니다.
+    2. 같은 **View options** → **Column by** → **MoSCoW**를 클릭합니다.
     3. 뷰 탭 이름을 더블클릭해 아래 이름으로 바꾸고 Enter를 누릅니다.
 
         ```text
@@ -270,8 +270,8 @@ flowchart LR
 
     **`진행 보드` 만들기**
 
-    1. 다시 **+ New view** → 새 뷰 탭 **▼** → **Layout** → **Board**를 클릭합니다.
-    2. 같은 **▼** 메뉴 → **Column by** → **Status**를 클릭합니다. `Todo`, `In Progress`, `Done` 칸이 생깁니다.
+    1. 다시 **+ New view** → 검색창 오른쪽 톱니바퀴 **View options**(뷰 설정) → **Layout** → **Board**를 클릭합니다.
+    2. 같은 **View options** → **Column by** → **Status**를 클릭합니다. `Todo`, `In Progress`, `Done` 칸이 생깁니다.
     3. 뷰 탭 이름을 더블클릭해 아래 이름으로 바꾸고 Enter를 누릅니다.
 
         ```text
