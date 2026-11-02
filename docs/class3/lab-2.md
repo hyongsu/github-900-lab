@@ -162,6 +162,16 @@ gitGraph
 
 PR을 만들면 Starter에 들어 있는 **메뉴 데이터 검사**가 자동으로 실행됩니다.
 
+!!! note "자동 검사는 GitHub 기능인가요, 누가 만든 건가요?"
+    둘 다입니다. **검사 내용은 우리가 만든 코드**이고, **그 코드를 정해진 때에 자동으로 돌려 주는 것이 GitHub 기능**(GitHub Actions)입니다. 템플릿으로 리포지토리를 만들 때 아래 두 파일이 함께 복사되어 왔습니다.
+
+    | 파일 | 누가 만들었나 | 하는 일 |
+    |---|---|---|
+    | `.github/workflows/check.yml` | 강사가 Starter에 넣어 둔 설정 | "PR이 열리거나 바뀌면 `node scripts/check-menus.js`를 실행하라"는 지시서. 이 폴더에 파일을 두면 GitHub가 읽고 따릅니다 |
+    | `scripts/check-menus.js` | 강사가 Starter에 넣어 둔 검사 프로그램 | `menus.json`이 JSON 형식이 맞는지, 가격과 거리가 숫자인지, 메뉴 이름이 겹치지 않는지 확인 |
+
+    그래서 회사마다 검사 내용은 다릅니다. 맞춤법 검사, 문서 형식 검사, 보안 검사 등 원하는 검사를 코드로 만들어 같은 방식으로 붙입니다. 1교시에 본 **웹페이지 배포**(`pages.yml`)도 같은 원리로 돌아가는 자동 작업입니다.
+
 1. PR 화면(**Conversation** 탭)을 아래로 내려, **Merge pull request** 버튼 위의 큰 상자(병합 상자)를 봅니다. 아래 그림처럼 생겼습니다.
 
     ![PR 병합 상자. 1 Review requested, 2 All checks have passed, 3 메뉴 데이터 검사 줄, 4 더 보기 메뉴, 5 Merge pull request 버튼](../images/class3/pr-checks.png)
