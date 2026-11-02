@@ -234,15 +234,18 @@ flowchart TB
         - 개발자가 제안을 반영하고 다시 리뷰를 요청하면 시작합니다.
         - **아직이면:** PR 오른쪽 **Reviewers**에서 내 이름 옆에 노란 점(리뷰 대기)이 없으면 개발자가 아직 반영하는 중입니다.
 
-    1. **Files changed** 탭에서 제안이 반영됐는지 확인합니다. 위쪽에 **Changes since your last review**(지난 리뷰 이후 바뀐 것)를 누르면 바뀐 부분만 보입니다.
-    2. **Files changed** 탭 → 오른쪽 위 초록 **Submit review**(리뷰 제출, 화면에 따라 **Review changes**) 클릭 → **Finish your review** 창 → 아래 예시 입력 → **Approve** 선택 → **Submit review**
+    1. PR을 엽니다. 맨 위에 노란 띠 `<개발자아이디> requested your review on this pull request.`(리뷰를 다시 요청했습니다)와 오른쪽 초록 **Add your review**(리뷰 남기기) 버튼이 보입니다. **Add your review**를 클릭합니다. **Files changed** 탭으로 바로 이동합니다.
+        - 노란 띠가 안 보이면 PR 위쪽 탭에서 **Files changed**를 직접 클릭해도 됩니다.
+    2. 제안이 반영됐는지 확인합니다. `site/menus.json`의 비빔밥 줄이 `"solo": true`로 바뀌어 있으면 반영된 것입니다.
+        - 바뀐 부분만 보고 싶으면 파일 목록 위 왼쪽 **All commits**(모든 커밋) 드롭다운을 누르고 **Changes since your last review**(지난 리뷰 이후 바뀐 것)를 고릅니다. 화면에 이 항목이 없으면 그냥 전체를 보면 됩니다.
+    3. 오른쪽 위 초록 **Submit review**(리뷰 제출, 화면에 따라 **Review changes**)를 클릭합니다. **Finish your review** 창이 열리면 아래 예시를 입력하고, 세 가지 중 **Approve**(승인)를 고른 뒤 창 아래 **Submit review**를 클릭합니다.
 
         ```text
         제안 반영 확인했습니다. 인수 조건 ①~④를 모두 만족합니다.
         ① 메뉴 8줄, ② 비빔밥 solo true와 종류, 가격, 거리, ③ 마라탕 price 10000, ④ check 초록 체크. 승인합니다.
         ```
 
-    3. PO에게 넘깁니다. PR 화면(**Conversation** 탭) 맨 아래 댓글 칸에 `@PO아이디 BA 검토 완료했습니다. 최종 승인 부탁드립니다.`
+    4. PO에게 넘깁니다. PR 화면(**Conversation** 탭) 맨 아래 댓글 칸에 `@PO아이디 BA 검토 완료했습니다. 최종 승인 부탁드립니다.`
 
     확인: `<BA아이디> approved these changes`가 보입니다.
 
