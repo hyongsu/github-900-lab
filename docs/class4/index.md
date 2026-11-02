@@ -98,7 +98,7 @@ flowchart LR
 | **Item closed** | 이슈가 닫히면 | Status를 Done으로 |
 | **Pull request merged** | PR이 병합되면 | Status를 Done으로 |
 
-자동화는 프로젝트 오른쪽 위 **...** 메뉴의 **Workflows**에서 켜고 끕니다. 오후 실습에서 PR을 병합했을 때 카드가 스스로 Done으로 가는 것을 직접 보게 됩니다.
+자동화는 프로젝트 오른쪽 위 **Workflows**에서 켜고 끕니다. 오후 실습에서 PR을 병합했을 때 카드가 스스로 Done으로 가는 것을 직접 보게 됩니다.
 
 !!! tip "핵심"
     이슈가 닫히면 보드도 알아서 Done이 됩니다. 사람은 일을 하고, 상태 정리는 자동화에 맡깁니다.

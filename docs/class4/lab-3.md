@@ -197,7 +197,7 @@ flowchart LR
     **기다리는 동안 할 일**
 
     - 5교시에 만들 팀 라벨 7개(`에픽`, `스토리`, `확인 필요`, `변경요청`, `우선순위-상`, `우선순위-중`, `우선순위-하`)를 미리 확인해 둡니다.
-    - 팀 프로젝트의 **...** → **Workflows**에서 Item closed, Pull request merged, Item added to project가 켜져 있는지 봅니다. 꺼져 있으면 실습 4-2처럼 켭니다.
+    - 팀 프로젝트 오른쪽 위 **Workflows**에서 Item closed, Pull request merged, Item added to project가 켜져 있는지 봅니다. 꺼져 있으면 실습 4-2처럼 켭니다.
 
 === "BA"
 

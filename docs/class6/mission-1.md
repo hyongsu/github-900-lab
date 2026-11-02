@@ -368,7 +368,7 @@ flowchart LR
     `Closes #10`을 PR 제목에만 쓰고 본문에 안 썼거나, 번호가 틀린 경우입니다. 이슈를 직접 열어 **Close issue**로 닫고, `진행 보드`의 카드도 Done으로 옮기세요. 다음 PR부터는 본문에 씁니다.
 
 ??? failure "진행 보드의 카드가 Done으로 안 옮겨져요"
-    4-2에서 설정한 자동화(Item closed → Done, Pull request merged → Done)가 팀 Projects에는 꺼져 있을 수 있습니다. Projects 오른쪽 위 **...** → **Workflows** → **Item closed**를 켜거나, 이번에는 `진행 보드`에서 카드를 직접 Done으로 옮기세요.
+    4-2에서 설정한 자동화(Item closed → Done, Pull request merged → Done)가 팀 Projects에는 꺼져 있을 수 있습니다. Projects 오른쪽 위 **Workflows** → **Item closed**를 켜거나, 이번에는 `진행 보드`에서 카드를 직접 Done으로 옮기세요.
 
 ??? failure "웹페이지에 변경이 안 보여요"
     **Actions** 탭에서 **웹페이지 배포**가 아직 노란 원이면 기다립니다. 초록 체크인데도 그대로면 브라우저 캐시 때문이니 강력 새로 고침(++ctrl+shift+r++ 또는 ++cmd+shift+r++)을 합니다. 빨간 X면 **Settings** → **Pages**에서 Source가 **GitHub Actions**인지 확인하고, Actions 탭에서 **웹페이지 배포** → **Run workflow**로 다시 실행합니다.

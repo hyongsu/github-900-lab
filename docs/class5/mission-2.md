@@ -244,8 +244,36 @@ flowchart LR
 
     **기다리는 동안 할 일**
 
-    - 팀 Projects **...** → **Workflows**에서 **Item closed**, **Pull request merged**, **Item added to project**가 켜져 있는지 확인합니다.
-    - 스토리마다 마일스톤 `MVP`가 붙어 있는지 확인합니다. Won't 스토리는 MoSCoW가 정해진 뒤 마일스톤을 빼 둡니다.
+    PO가 MoSCoW를 정하는 동안 두 가지를 점검합니다.
+
+    **1. 자동화가 켜져 있는지 보기**
+
+    1. 팀 Projects `점심 메뉴 추천 팀<번호>` 화면 오른쪽 위의 **Workflows** 버튼을 클릭합니다. (옆에 숫자가 붙어 있을 수 있습니다. 화면이 좁으면 **...** 메뉴 안에 있습니다.)
+    2. 왼쪽에 자동화 목록이 나옵니다. 아래 세 개를 하나씩 클릭합니다.
+
+        | 자동화 | 하는 일 |
+        |---|---|
+        | **Item closed** | 이슈를 닫으면 Status를 `Done`으로 |
+        | **Pull request merged** | PR을 병합하면 Status를 `Done`으로 |
+        | **Item added to project** | 보드에 새로 담기면 Status를 `Todo`로 |
+
+    3. 각각 오른쪽 위에 초록색 **On** 표시가 있으면 켜진 것입니다. 꺼져 있으면 **Edit** → **Save and turn on workflow**로 켭니다. 방법은 실습 4-2 STEP 7과 같습니다.
+
+    확인: 세 자동화가 모두 On입니다. 6교시에 PR을 병합하면 보드 카드가 저절로 Done으로 옮겨지는 것이 이 설정 덕분입니다.
+
+    **2. 스토리마다 마일스톤 MVP가 붙어 있는지 보기**
+
+    1. 팀 리포지토리 **Issues** 탭을 엽니다.
+    2. 검색창 내용을 모두 지우고 아래를 입력한 뒤 Enter를 누릅니다. 마일스톤이 **없는** 스토리만 걸러 줍니다.
+
+        ```text
+        is:issue is:open label:스토리 no:milestone
+        ```
+
+    3. 결과가 **0개**면 모든 스토리에 마일스톤이 있는 것입니다. 나오는 스토리가 있으면 열어서 오른쪽 **Milestone** 톱니바퀴 → `MVP`를 고릅니다.
+    4. PO가 MoSCoW를 정한 뒤 **Won't** 스토리(예: 투표)는 이번 출시에서 빼는 것이므로, 그 이슈를 열어 **Milestone** 톱니바퀴 → 체크된 `MVP`를 한 번 더 눌러 해제합니다.
+
+    확인: `is:issue label:스토리 milestone:MVP`로 검색하면 Won't를 뺀 스토리만 나옵니다.
 
     ### ⑤ 스프린트 배정과 보드 뷰 두 개 만들기
 
