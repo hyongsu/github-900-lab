@@ -32,7 +32,7 @@
 | ⑧ | PO | Actions 배포 확인, 배포된 웹페이지에서 인수 조건 ①~③ 확인, 결과 댓글 | 팀 전체 |
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["① PM<br/>대표 스토리 배정<br/>진행 보드"] --> B["② 개발자<br/>story-10, 커밋, PR"]
     B --> C{"자동 검사<br/>check"}
     C -->|실패| B

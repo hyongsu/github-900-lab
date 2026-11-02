@@ -111,7 +111,7 @@ kim이 요청하고 lee가 질문하고 kim이 답하는 대화가 요구사항 
 | **Milestone** (마일스톤) | 언제까지 묶어 내나 | `MVP` (첫 출시) | 묶인 이슈 중 몇 퍼센트 끝났는지 자동 계산 |
 
 ```mermaid
-flowchart LR
+flowchart TB
     I["이슈<br/>예산으로 메뉴 거르기"] --> L["Labels<br/>기능, 우선순위-상"]
     I --> A["Assignees<br/>@lee"]
     I --> M["Milestone<br/>MVP"]
@@ -143,7 +143,7 @@ flowchart LR
 "메뉴 추천" 같은 큰 요구는 한 번에 끝낼 수 없습니다. 이런 큰 덩어리를 **에픽**(epic)이라고 부릅니다. 에픽 이슈 안에서 **Create sub-issue**(하위 이슈 만들기)를 누르면 작은 이슈로 쪼갤 수 있습니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     E["에픽<br/>메뉴 추천"] --> S1["하위 이슈<br/>예산으로 거르기"]
     E --> S2["하위 이슈<br/>거리로 거르기"]
     E --> S3["하위 이슈<br/>랜덤으로 하나 뽑기"]

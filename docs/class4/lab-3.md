@@ -57,7 +57,7 @@ BA 아이디:
 | 8 | 팀 전체 | 확인 체크리스트 | 강사 |
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["PO<br/>리포지토리 만들기"] --> B["PO<br/>팀원 초대"]
     B --> C["팀원<br/>초대 수락"]
     C --> D["PO<br/>Pages 켜기"]

@@ -39,7 +39,7 @@
     한 사람만 초대하면 안 됩니다. 리포지토리는 **사람마다 하나씩** 있고, 3교시에는 둘 다 각자 자기 리포지토리에 PR을 열어 서로 리뷰합니다.
 
     ```mermaid
-    flowchart LR
+    flowchart TB
         A["나의 lunch-practice<br/>내 PR"] -- "짝꿍이 리뷰" --> B["짝꿍"]
         C["짝꿍의 lunch-practice<br/>짝꿍 PR"] -- "내가 리뷰" --> D["나"]
     ```

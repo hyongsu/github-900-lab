@@ -8,7 +8,7 @@
 이 과제는 6교시 **이력 감사**의 예행연습입니다. 6교시에는 팀 리포지토리에서 "누가 언제 왜 바꿨는지"를 증명해야 합니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["menus.json<br/>Blame"] --> B["김치찌개 price 줄의<br/>커밋 메시지 클릭"]
     B --> C["커밋 화면<br/>PR 번호 링크 클릭"]
     C --> D["PR 화면<br/>본문, 리뷰, 충돌 해결 기록"]

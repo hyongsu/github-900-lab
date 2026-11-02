@@ -35,7 +35,7 @@
 | ⑥ | PO | Release `v1.1` 발행, `v1.0...v1.1` 비교 | 팀 전체 |
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["강사<br/>CR-001 발표"] --> B["① PO<br/>이슈 접수, 수용 결정"]
     B --> C["② PM<br/>2차 출시, 스프린트 2"]
     B --> D["③ BA<br/>영향 분석<br/>cr-001-docs PR"]

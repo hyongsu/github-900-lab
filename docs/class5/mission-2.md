@@ -29,7 +29,7 @@
 | ⑥ | PO | README에 "## MVP 범위"(Must별 핵심 인수 조건, 결정 요약) 추가 커밋, Release `v1.0` 발행 | 팀 전체 |
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["① PM<br/>Projects에 스토리 추가<br/>필드 3개"] --> B["② PO<br/>MoSCoW 지정<br/>Must 3개 이하"]
     B --> C["③ BA<br/>Must에 인수 조건"]
     B --> D["④ 개발자<br/>Must에 크기"]

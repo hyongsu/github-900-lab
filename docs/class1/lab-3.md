@@ -74,7 +74,7 @@
 
 !!! note "커밋 하나가 웹페이지까지 가는 길"
     ```mermaid
-    flowchart LR
+    flowchart TB
         A["웹에서 menus.json 수정"] --> B["Commit changes<br/>(main에 커밋)"]
         B --> C["웹페이지 배포 작업<br/>자동 실행"]
         C --> D["웹페이지에<br/>9,500원 표시"]

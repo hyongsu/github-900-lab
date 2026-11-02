@@ -28,7 +28,7 @@
 | ④ | BA, PO | BA 승인 후에도 막히는 것 확인, Code Owner인 PO 승인 후 병합 가능 확인 | PM |
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["① PO<br/>CODEOWNERS"] --> B["② PM 지시, PO 클릭<br/>Ruleset main 보호"]
     B --> C["③ 개발자<br/>main 직접 수정"]
     C -->|막힘| D["새 분기로 PR"]

@@ -85,7 +85,7 @@ flowchart TB
 Projects에는 기본 자동화(**Workflows**)가 들어 있습니다. 담당자가 매번 보드 카드를 손으로 옮길 필요가 없습니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["이슈 추가"] -->|"Item added to project"| T["Todo"]
     T -->|"작업 시작 (손으로)"| P["In Progress"]
     P --> M["PR 병합"]
@@ -128,7 +128,7 @@ GitHub에서는 `#12`처럼 샵 뒤에 번호를 쓰면 12번 이슈나 PR로 �
 여기서 한 걸음 더 나가, PR 본문에 `Closes #12`라고 쓰면 12번 이슈와 그 PR이 **연결**됩니다. 그리고 PR이 병합되는 순간 12번 이슈가 **자동으로 닫힙니다.** 앞에서 본 Projects 자동화(Item closed)와 합치면, PR 하나 병합으로 이슈 종료와 보드 이동이 한 번에 일어납니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     I["이슈 #12<br/>예산으로 메뉴 거르기"] -- "#12로 연결" --> P["PR 본문<br/>Closes #12"]
     P -- 병합 --> C["커밋 a1b2c3d"]
     C -. "이슈 #12 자동 종료" .-> I
@@ -161,7 +161,7 @@ flowchart LR
 역할 사이에 요구가 흐르는 순서입니다. PO가 현업 요청을 받아 우선순위를 정하면, PM이 일정과 담당을 정하고, BA가 사용자 스토리와 인수 조건으로 구체화해서 개발자에게 넘깁니다. 개발자가 구현하면 BA가 요구를 충족했는지 검토하고, PO가 최종 승인해서 반영됩니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     PO["PO<br/>현업 요청을 받아<br/>우선순위 결정"] -- 요구 --> PM["PM<br/>일정과<br/>담당 배정"]
     PM -- 작업 --> BA["BA<br/>스토리와<br/>인수 조건"]
     BA -- 요구사항 --> DEV["개발자<br/>질문하고<br/>구현"]

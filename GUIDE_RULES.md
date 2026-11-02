@@ -113,7 +113,7 @@ scripts/check-menus.js         메뉴 데이터 검사. 성공 "[통과] 메뉴 
 ```
 
 - 교안 본문은 **장표 노트보다 자세하게** 쓴다. 수강생이 수업 후 이 페이지만 읽어도 복습이 되어야 한다.
-- 기술 원리 장표(스냅샷, 해시, 분기 포인터, 병합 방식, 충돌, revert와 reset, Actions, git 명령 흐름 등)는 **반드시 mermaid 그림**을 넣는다. 커밋 그래프는 mermaid `gitGraph`를 쓸 수 있다.
+- 기술 원리 장표(스냅샷, 해시, 분기 포인터, 병합 방식, 충돌, revert와 reset, Actions, git 명령 흐름 등)는 **반드시 mermaid 그림**을 넣는다. 본문 폭은 약 690px라서 가로(`flowchart LR`) 그림은 노드가 4개를 넘으면 글자가 작아져 읽을 수 없다. **노드 4개 이상인 흐름도는 `flowchart TB`(세로)**로 쓰고, 가로는 노드 3개 이하만 쓴다. 커밋 그래프는 mermaid `gitGraph`를 쓸 수 있다.
 
 ### 실습 페이지 (`classN/lab-N.md`, `classN/mission-N.md`)
 

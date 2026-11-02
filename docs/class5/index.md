@@ -234,7 +234,7 @@ gitGraph
 ## 전체 흐름
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph M1["미션 5-1 요구 주고받기"]
         A["① PO<br/>에픽 3개"] --> B["② PM<br/>라벨, 마일스톤, 담당"]
         B --> C["③ BA<br/>템플릿, 스토리 7개"]

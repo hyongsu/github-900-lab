@@ -92,7 +92,7 @@ Git은 커밋할 때마다 그 순간 **프로젝트 전체의 사진**을 찍�
 아래 그림에서 파란 칸은 그 커밋에서 새로 저장한 파일, 회색 칸은 이전 것을 그대로 가리키는 파일입니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph C1["커밋 1"]
         A1["README.md v1"]:::new
         B1["menus.json v1"]:::new
@@ -237,7 +237,7 @@ flowchart LR
 GitHub 웹 화면에서 파일을 고쳤다고 바로 저장되는 것이 아닙니다. 연필 아이콘으로 고친 다음 **Commit changes** 버튼을 눌러야 비로소 커밋, 즉 기록이 됩니다. 웹 화면에서는 이 버튼이 **저장 버튼**이라고 생각하면 됩니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["① 파일 고치기<br/>연필 아이콘"] -->|저장 버튼| B["② Commit changes<br/>메시지를 쓰고 저장"]
     B -->|기록| C["③ 이력에 기록<br/>누가, 언제, 왜"]
     A -.->|커밋 안 하고 닫으면| D["저장되지 않음"]

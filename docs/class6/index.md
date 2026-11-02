@@ -52,7 +52,7 @@
 이벤트가 생기면 GitHub 서버가 정해진 작업을 자동으로 실행하고, 결과를 PR 화면에 초록 체크(통과) 또는 빨간 X(실패)로 보여 줍니다. 사람이 버튼을 누를 필요가 없습니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["이벤트<br/>PR이 열림, main에 병합됨"] -->|감지| B["작업 실행<br/>GitHub 서버가 자동으로"]
     B -->|완료| C{"결과 표시"}
     C -->|통과| D["PR 화면에 초록 체크"]
@@ -109,7 +109,7 @@ flowchart LR
 | PO | 사용자가 보는 화면에서 정말 되는가 | 배포된 웹페이지 |
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["PR 열림"] --> B["자동 검사 check<br/>형식이 맞나"]
     B --> C["BA 리뷰<br/>인수 조건 ①~④"]
     C --> D["PO 승인과 병합"]
@@ -128,7 +128,7 @@ flowchart LR
 Starter에는 main에 병합되면 웹페이지를 자동으로 다시 배포하는 워크플로가 하나 더 들어 있습니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["main에 병합<br/>PR 승인 후"] --> B["Actions 실행<br/>웹페이지 배포 시작"]
     B --> C["Pages에 올림<br/>site 폴더를 GitHub가 호스팅"]
     C --> D["웹 주소 반영<br/>1~2분 뒤 확인"]
@@ -157,7 +157,7 @@ flowchart LR
 미션 중간에 강사가 현업 고객(경영지원팀 박지은 과장)으로서 변경 요청을 하나 드립니다. 요구사항 기준선(v1.0)을 정한 뒤에 들어오는 요청은 바로 고치지 않고 정해진 절차로 처리합니다. 그래야 "누가 언제 무엇을 왜 바꾸기로 했는가"가 남습니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["1 접수<br/>PO"] --> B["2 영향 분석<br/>BA"] --> C["3 결정<br/>PO"] --> D["4 일정 조정<br/>PM"] --> E["5 반영<br/>개발자"] --> F["6 기록<br/>Release"]
 ```
 

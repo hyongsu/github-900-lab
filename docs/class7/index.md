@@ -49,7 +49,7 @@
 명령어로 작업할 때는 파일이 네 곳을 거쳐 GitHub에 도착합니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["작업 폴더<br/>파일을 고침"] -->|git add| B["스테이징<br/>커밋할 것만 담음"]
     B -->|git commit| C["로컬 리포지토리<br/>내 컴퓨터의 기록"]
     C -->|git push| D["원격 GitHub<br/>팀이 함께 보는 곳"]
@@ -154,7 +154,7 @@ GitHub는 보안을 위해 비밀번호만으로는 명령어 작업(push, pull)
 **분기 보호**는 main 같은 중요한 분기에 규칙을 거는 기능입니다. GitHub에서는 **Rulesets**(규칙 묶음)로 설정합니다. 규칙을 걸면 main을 직접 고치는 것이 막히고, 반드시 분기에서 고치고 PR을 열어야 하며, 승인과 자동 검사 통과가 있어야 병합할 수 있습니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     X["main 직접 수정"] -->|막힘| Z["차단"]
     A["분기에서 수정"] --> B["PR 필수"]
     B --> C["승인 1명<br/>리뷰 통과"]

@@ -12,7 +12,7 @@
 오전에는 GitHub의 핵심 개념을 각자 익혔고, 오후에는 그 개념으로 역할을 나눠 협업했습니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph AM["오전과 4교시: 개인 실습 lunch-practice"]
         direction LR
         C1["1교시<br/>커밋과 이력"] --> C2["2교시<br/>README, Issue"] --> C3["3교시<br/>분기, PR, 충돌"] --> C4["4교시<br/>Projects, MVP"]

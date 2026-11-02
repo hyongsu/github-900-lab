@@ -55,7 +55,7 @@
 GitHub에서 변경을 반영하는 표준 흐름을 **GitHub flow**라고 합니다. 다섯 단계입니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["① 분기 만들기<br/>작업용 갈래"] --> B["② 고치고 커밋<br/>몇 번이든"]
     B --> C["③ PR 열기<br/>검토 요청"]
     C --> D["④ 리뷰<br/>의견, 승인"]
@@ -224,7 +224,7 @@ PR을 병합할 때 **Merge pull request** 버튼 옆 ▼를 누르면 방식을
 원래 김치찌개 가격이 9000원이었는데, 영희는 자기 분기에서 8000원으로, 철수는 자기 분기에서 9500원으로 고쳤다고 해 봅시다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     O["원래 내용<br/>&quot;price&quot;: 9000"] --> A["영희의 분기<br/>&quot;price&quot;: 8000"]
     O --> B["철수의 분기<br/>&quot;price&quot;: 9500"]
     A -- "먼저 병합됨" --> M["main"]
