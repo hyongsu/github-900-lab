@@ -80,7 +80,7 @@ flowchart LR
         ```
 
     5. **Approve**(승인) 선택 → **Submit review**(리뷰 제출) 클릭
-    6. PM에게 알립니다. PR 댓글로 `@PM아이디 최종 승인했습니다. 병합 부탁드립니다.`라고 남겨도 됩니다.
+    6. PM에게 알립니다. PR 화면(**Conversation** 탭) 맨 아래 댓글 칸에 `@PM아이디 최종 승인했습니다. 병합 부탁드립니다.`라고 남겨도 됩니다.
 
     확인: PR의 **Conversation** 탭에 `<PO아이디> approved these changes`가 보입니다.
 
@@ -162,7 +162,7 @@ flowchart LR
     5. 보라색 **Merged** 표시가 뜨면 바로 옆 **Delete branch**(분기 삭제) 클릭
     6. **Issues** 탭으로 가서 해당 스토리 이슈가 **Closed**(닫힘)인지 확인합니다.
     7. **Projects** → `진행 보드`에서 대표 스토리 카드가 `Done` 열로 자동으로 옮겨졌는지 확인합니다.
-    8. PO에게 알립니다. `@PO아이디 병합했습니다. 배포 확인 부탁드립니다.`
+    8. 병합한 PR 화면(**Conversation** 탭) 맨 아래 댓글 칸에 PO에게 알립니다. `@PO아이디 병합했습니다. 배포 확인 부탁드립니다.`
 
     확인: PR이 보라색 Merged, 대표 스토리 이슈가 Closed, `진행 보드`의 카드가 Done입니다.
 
@@ -242,7 +242,7 @@ flowchart LR
         ① 메뉴 8줄, ② 비빔밥 solo true와 종류, 가격, 거리, ③ 마라탕 price 10000, ④ check 초록 체크. 승인합니다.
         ```
 
-    3. PO에게 넘깁니다. PR 댓글로 `@PO아이디 BA 검토 완료했습니다. 최종 승인 부탁드립니다.`
+    3. PO에게 넘깁니다. PR 화면(**Conversation** 탭) 맨 아래 댓글 칸에 `@PO아이디 BA 검토 완료했습니다. 최종 승인 부탁드립니다.`
 
     확인: `<BA아이디> approved these changes`가 보입니다.
 

@@ -172,7 +172,7 @@ flowchart LR
         ```
 
     2. **Conversation** 탭 아래쪽 병합 영역을 봅니다. 승인 1명은 채웠지만 아직 **Code owner review required**(Code Owner 리뷰 필요)가 남아 있습니다. README는 CODEOWNERS의 `*` 줄에 해당해서 담당자가 PO이기 때문입니다.
-    3. PO에게 넘깁니다. `@PO아이디 README는 Code Owner 승인이 필요합니다. 승인 부탁드립니다.`
+    3. PO에게 넘깁니다. 개발자의 PR 화면(**Conversation** 탭) 맨 아래 댓글 칸에 `@PO아이디 README는 Code Owner 승인이 필요합니다. 승인 부탁드립니다.`
 
     확인: BA가 승인했는데도 병합 버튼이 막혀 있습니다.
 
