@@ -72,14 +72,14 @@ flowchart TB
     1. 리포지토리 위쪽 **Pull requests** 탭 → 개발자가 연 PR 클릭
     2. **Conversation**(대화) 탭에서 BA의 리뷰와 개발자의 답글을 읽고, 변경 내용이 스토리의 의도("늘 가던 곳 말고 새 메뉴도 후보로")와 맞는지 봅니다.
     3. **Files changed** 탭 → 오른쪽 위 초록 **Submit review**(리뷰 제출, 화면에 따라 **Review changes**) 클릭 → **Finish your review** 창이 열립니다
-    4. 댓글 칸에 아래 예시를 입력합니다.
+    4. 창 위쪽 **Leave a comment** 칸에 아래 예시를 입력합니다.
 
         ```text
         BA가 인수 조건 ①~④로 검토하고 수정 요청이 반영된 것을 확인했습니다. 스토리 의도와 맞습니다.
         병합 후 배포된 웹페이지에서 ①~③을 직접 확인하겠습니다. 최종 승인합니다.
         ```
 
-    5. **Approve**(승인) 선택 → **Submit review**(리뷰 제출) 클릭
+    5. 같은 창에서 세 가지 중 **Approve**(승인)를 고르고(기본값은 **Comment**), 창 아래 초록 **Submit review**(리뷰 제출)를 클릭합니다. 창 모양은 [실습 3-3 STEP 3 그림](../class3/lab-3.md#step-3-request-changes)과 같습니다.
     6. PM에게 알립니다. PR 화면(**Conversation** 탭) 맨 아래 댓글 칸에 `@PM아이디 최종 승인했습니다. 병합 부탁드립니다.`라고 남겨도 됩니다.
 
     확인: PR의 **Conversation** 탭에 `<PO아이디> approved these changes`가 보입니다.
