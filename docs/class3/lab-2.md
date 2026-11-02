@@ -162,10 +162,21 @@ gitGraph
 
 PR을 만들면 Starter에 들어 있는 **메뉴 데이터 검사**가 자동으로 실행됩니다.
 
-1. PR 화면(**Conversation** 탭) 아래쪽, **Merge pull request** 버튼 위의 검사 상자를 봅니다.
-2. 처음에는 노란 점과 함께 **Some checks haven't completed yet**(아직 끝나지 않은 검사가 있습니다)이 보입니다. 20~40초 기다립니다.
-3. 초록 체크와 함께 **All checks have passed**(모든 검사 통과)로 바뀌면, 그 아래 **메뉴 데이터 검사 / check (pull_request)** 줄 오른쪽의 **Details**(자세히)를 클릭합니다.
-4. 로그에서 `Run node scripts/check-menus.js` 단계를 클릭해 펼칩니다.
+1. PR 화면(**Conversation** 탭)을 아래로 내려, **Merge pull request** 버튼 위의 큰 상자(병합 상자)를 봅니다. 아래 그림처럼 생겼습니다.
+
+    ![PR 병합 상자. 1 Review requested, 2 All checks have passed, 3 메뉴 데이터 검사 줄, 4 더 보기 메뉴, 5 Merge pull request 버튼](../images/class3/pr-checks.png)
+
+    | 번호 | 화면 | 뜻 |
+    |---|---|---|
+    | ① | **Review requested** | 짝꿍에게 리뷰를 요청해 둔 상태. 아래에 `1 pending review`(리뷰 1건 대기 중)와 짝꿍 아이디가 보입니다 |
+    | ② | **All checks have passed** | 자동 검사가 모두 통과했다는 뜻. 처음 20~40초는 노란 점과 **Some checks haven't completed yet**(아직 끝나지 않은 검사가 있습니다)이 보입니다 |
+    | ③ | **메뉴 데이터 검사 / check (pull_request)** | 검사 하나. Starter의 `check.yml`이 실행한 검사입니다 |
+    | ④ | **...** | 이 검사의 더 보기 메뉴 |
+    | ⑤ | **Merge pull request** | 병합 버튼. **아직 누르지 않습니다.** 짝꿍 리뷰를 받은 뒤 3-3에서 누릅니다 |
+
+2. ②가 초록 체크로 바뀔 때까지 기다립니다.
+3. ③의 검사 이름 **메뉴 데이터 검사 / check (pull_request)**를 클릭합니다. (화면에 따라 줄 오른쪽에 **Details** 링크가 보이면 그것을 눌러도 되고, ④ **...**를 눌러 나오는 메뉴에서 들어가도 됩니다.)
+4. 검사 실행 화면(Actions 로그)이 열립니다. 단계 목록에서 `Run node scripts/check-menus.js`를 클릭해 펼칩니다.
 
 확인: 로그에 아래 문장이 보입니다. 숫자는 처음 메모한 N보다 1 큰 **N+1**입니다(6개로 시작했으면 7, 7개로 시작했으면 8). 숫자는 사람마다 다릅니다.
 
@@ -190,7 +201,7 @@ PR을 만들면 Starter에 들어 있는 **메뉴 데이터 검사**가 자동�
 
 5. PR의 **Conversation** 탭으로 돌아와 검사 상자를 봅니다.
 
-확인: 잠시 뒤 빨간 X와 함께 **All checks have failed**(모든 검사 실패)가 보입니다. **Details**를 누르면 로그에 아래 문장이 있습니다.
+확인: 잠시 뒤 빨간 X와 함께 **All checks have failed**(모든 검사 실패)가 보입니다. STEP 5처럼 검사 이름을 클릭해 로그를 열면 아래 문장이 있습니다.
 
 ```text
 [실패] site/menus.json이 올바른 JSON 형식이 아닙니다.
@@ -259,7 +270,7 @@ PR을 만들면 Starter에 들어 있는 **메뉴 데이터 검사**가 자동�
     - 검사가 실패가 아니라 회색으로 멈춰 있으면 페이지를 새로 고침합니다.
 
 ??? failure "쉼표를 다시 넣었는데도 빨간 X예요"
-    Details 로그의 `[실패]` 문장을 읽어 봅니다.
+    검사 로그의 `[실패]` 문장을 읽어 봅니다.
 
     - `올바른 JSON 형식이 아닙니다`: 비빔밥 줄 **뒤**에 쉼표가 붙어 있거나, 따옴표나 `}`가 빠졌습니다. 위 STEP 2의 전체 내용과 한 줄씩 비교하세요.
     - `메뉴 이름이 겹칩니다`: 이미 있는 메뉴 이름을 썼습니다. 1교시에 비빔밥을 추가했다면 이 경우입니다. 다른 이름(예: `김밥`)으로 바꾸세요.
