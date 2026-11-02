@@ -41,7 +41,7 @@
 ## 다음 교시로 넘어가기 전에
 
 - 팀 리포지토리와 개인 연습 리포지토리 `lunch-practice`는 지우지 마세요. 7교시에 둘 다 씁니다.
-- 7교시 실습 7-3에서 2단계 인증을 켭니다. 휴대폰에 인증 앱(Google Authenticator, Microsoft Authenticator 등)이 없다면 쉬는 시간에 설치해 두세요.
+- 7교시 실습 7-2에서 2단계 인증을 켭니다. 휴대폰에 인증 앱(Google Authenticator, Microsoft Authenticator 등)이 없다면 쉬는 시간에 설치해 두세요.
 - 다음은 [7교시 안전한 운영과 보안](../class7/index.md)입니다.
 
 ## 다음 교시 시작 상태 확인

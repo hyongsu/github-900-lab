@@ -89,7 +89,7 @@ nav:
   - 7교시 운영과 보안:
       - 교안: class7/index.md
       - 실습 7-1 터미널로 Git 다루기: class7/lab-1.md
-      - 실습 7-3 2단계 인증 켜기: class7/lab-3.md
+      - 실습 7-2 2단계 인증 켜기: class7/lab-2.md
       - 오늘의 정리: class7/wrap-up.md
   - 부록:
       - Starter 파일 보기: appendix/starter-files.md
