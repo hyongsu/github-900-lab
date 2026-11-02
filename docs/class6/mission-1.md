@@ -396,7 +396,7 @@ flowchart TB
 ## 막히면
 
 ??? failure "병합 뒤 Code 탭에 Your main branch isn't protected 안내가 떠요"
-    GitHub가 리포지토리 주인(PO)에게 보여 주는 **추천 안내**입니다. 협업자가 생기고 PR이 병합되기 시작하면 "main을 보호하는 규칙을 만들어 보세요"라고 권합니다. 오류가 아닙니다. 지금은 **Dismiss**(닫기)를 누르거나 그대로 둡니다. **Protect this branch**는 누르지 않습니다. main 보호 규칙은 7교시 실습 7-2에서 팀이 함께 만듭니다.
+    GitHub가 리포지토리 주인(PO)에게 보여 주는 **추천 안내**입니다. 협업자가 생기고 PR이 병합되기 시작하면 "main을 보호하는 규칙을 만들어 보세요"라고 권합니다. 오류가 아닙니다. 지금은 **Dismiss**(닫기)를 누르거나 그대로 둡니다. **Protect this branch**는 누르지 않습니다. 이번 과정에서는 분기 보호를 실습하지 않습니다. 여럿이 오래 쓰는 리포지토리라면 나중에 이 버튼으로 "PR과 승인 없이는 main을 못 바꾸게" 설정할 수 있습니다.
 
 ??? failure "Reviewers 목록에 팀원 이름이 안 나와요"
     팀원이 협력자 초대를 아직 수락하지 않은 경우입니다. PO가 **Settings** → **Collaborators**에서 상태를 확인하고, 팀원은 메일이나 `https://github.com/notifications`에서 초대를 수락합니다.

@@ -55,4 +55,4 @@
 | 남겨 둘 이슈, PR | 열린 PR 없음 (옆 팀이 Fork로 보낸 PR이 있으면 병합하거나 닫음). 대표 스토리 이슈와 CR-001 이슈는 Closed, CR 이슈에 감사 답변 댓글 |
 | 릴리스 | `v1.0`(요구사항 기준선 v1.0)과 `v1.1`(배달 메뉴 반영 v1.1) |
 | 데이터 상태 | 팀 리포지토리 `site/menus.json` 메뉴 8개(기존 6개와 비빔밥, 마라탕), 모든 메뉴에 `delivery` 항목. 배달 가능은 김치찌개, 짜장면, 쌀국수, 마라탕 |
-| 다음에 열 화면 | 7-1: 개인 `lunch-practice`의 **Code** ▼ → **Codespaces** (Codespace를 열 곳). 7-2: 팀 리포지토리 **Settings** (PO 화면) |
+| 다음에 열 화면 | 7-1: 개인 `lunch-practice`의 **Code** ▼ → **Codespaces** (Codespace를 열 곳). |
