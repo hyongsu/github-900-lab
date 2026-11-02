@@ -107,7 +107,7 @@ flowchart TB
         - **아직이면:** **Pull requests** 탭에 BA의 PR이 없으면 기다립니다.
 
     1. **Pull requests** 탭 → BA의 PR → **Files changed** 탭에서 README의 바뀐 부분을 읽습니다.
-    2. **Review changes** → 아래 예시 입력 → **Approve** → **Submit review**
+    2. **Files changed** 탭 → 오른쪽 위 초록 **Submit review**(리뷰 제출, 화면에 따라 **Review changes**) 클릭 → **Finish your review** 창 → 아래 예시 입력 → **Approve** → **Submit review**
 
         ```text
         2차 출시 범위에 배달 표시가 들어간 것을 확인했습니다. 결정 내용과 맞습니다. 승인합니다.
@@ -295,7 +295,7 @@ flowchart TB
         - **아직이면:** **Pull requests** 탭에 개발자의 PR이 없거나, 자동 검사가 노란 점이면 기다립니다.
 
     1. **Files changed** 탭에서 메뉴 8개 모두에 `"delivery"`가 있는지, 값이 `true` 또는 `false`인지, 영향 분석의 인수 조건과 맞는지 봅니다. 6-1에서 추가한 비빔밥, 마라탕 줄이 빠지거나 바뀌지 않았는지도 확인합니다.
-    2. 고칠 곳이 있으면 6-1처럼 **Add a suggestion**으로 제안합니다. 없으면 **Review changes** → **Approve** → **Submit review**
+    2. 고칠 곳이 있으면 6-1처럼 **Add a suggestion**으로 제안합니다. 없으면 **Files changed** 탭 → 오른쪽 위 초록 **Submit review**(리뷰 제출, 화면에 따라 **Review changes**) 클릭 → **Finish your review** 창 → **Approve** → **Submit review**
 
         ```text
         영향 분석 표의 메뉴 데이터 항목대로 모든 메뉴에 delivery가 들어간 것을 확인했습니다. 자동 검사도 통과했습니다. 승인합니다.

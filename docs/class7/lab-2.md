@@ -87,7 +87,7 @@ flowchart TB
         - BA가 승인하고 "그래도 막혀요"라고 알리면 시작합니다.
         - **아직이면:** PR **Reviewers**에 BA의 승인이 없으면 기다립니다.
 
-    1. 개발자의 PR → **Files changed** → **Review changes** → **Approve** → **Submit review**
+    1. 개발자의 PR → **Files changed** → 오른쪽 위 초록 **Submit review**(리뷰 제출, 화면에 따라 **Review changes**) 클릭 → **Finish your review** 창 → **Approve** → **Submit review**
 
         ```text
         README는 Code Owner(PO) 승인 대상입니다. 확인했고 승인합니다.
@@ -165,7 +165,7 @@ flowchart TB
         - 개발자가 PR을 열고 나를 리뷰어로 지정하면 시작합니다.
         - **아직이면:** **Pull requests** 탭에 개발자의 PR이 없으면 기다립니다.
 
-    1. 개발자의 PR → **Files changed** → **Review changes** → **Approve** → **Submit review**
+    1. 개발자의 PR → **Files changed** → 오른쪽 위 초록 **Submit review**(리뷰 제출, 화면에 따라 **Review changes**) 클릭 → **Finish your review** 창 → **Approve** → **Submit review**
 
         ```text
         README 문구 확인했습니다. 승인합니다.

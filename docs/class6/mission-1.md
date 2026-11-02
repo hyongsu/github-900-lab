@@ -71,7 +71,7 @@ flowchart TB
 
     1. 리포지토리 위쪽 **Pull requests** 탭 → 개발자가 연 PR 클릭
     2. **Conversation**(대화) 탭에서 BA의 리뷰와 개발자의 답글을 읽고, 변경 내용이 스토리의 의도("늘 가던 곳 말고 새 메뉴도 후보로")와 맞는지 봅니다.
-    3. **Files changed** 탭 → 오른쪽 위 **Review changes**(리뷰 남기기) 클릭
+    3. **Files changed** 탭 → 오른쪽 위 초록 **Submit review**(리뷰 제출, 화면에 따라 **Review changes**) 클릭 → **Finish your review** 창이 열립니다
     4. 댓글 칸에 아래 예시를 입력합니다.
 
         ```text
@@ -217,8 +217,8 @@ flowchart TB
         ```
         ````
 
-    8. **Start a review**(리뷰 시작) 클릭. 의견이 더 있으면 5~8을 반복합니다.
-    9. 오른쪽 위 **Review changes** 클릭 → 전체 의견 입력 → **Request changes**(수정 요청) 선택 → **Submit review**
+    8. 댓글 창 오른쪽 아래 **Add review comment**(리뷰 댓글 추가, 예전 화면은 **Start a review**) 클릭. 댓글에 노란 **Pending**이 붙으면 됩니다. 의견이 더 있으면 5~8을 반복합니다.
+    9. 오른쪽 위 초록 **Submit review**(리뷰 제출, 화면에 따라 **Review changes**) 클릭 → **Finish your review** 창에서 **Leave a comment** 칸에 전체 의견 입력 → 기본값 **Comment** 대신 **Request changes**(수정 요청) 선택 → 창 아래 **Submit review**. (창 모양은 [실습 3-3 STEP 3 그림](../class3/lab-3.md#step-3-request-changes) 참고)
 
         ```text
         인수 조건 ①~④ 기준으로 검토했습니다.
@@ -235,7 +235,7 @@ flowchart TB
         - **아직이면:** PR 오른쪽 **Reviewers**에서 내 이름 옆에 노란 점(리뷰 대기)이 없으면 개발자가 아직 반영하는 중입니다.
 
     1. **Files changed** 탭에서 제안이 반영됐는지 확인합니다. 위쪽에 **Changes since your last review**(지난 리뷰 이후 바뀐 것)를 누르면 바뀐 부분만 보입니다.
-    2. **Review changes** → 아래 예시 입력 → **Approve** 선택 → **Submit review**
+    2. **Files changed** 탭 → 오른쪽 위 초록 **Submit review**(리뷰 제출, 화면에 따라 **Review changes**) 클릭 → **Finish your review** 창 → 아래 예시 입력 → **Approve** 선택 → **Submit review**
 
         ```text
         제안 반영 확인했습니다. 인수 조건 ①~④를 모두 만족합니다.
@@ -396,7 +396,7 @@ flowchart TB
     팀원이 협력자 초대를 아직 수락하지 않은 경우입니다. PO가 **Settings** → **Collaborators**에서 상태를 확인하고, 팀원은 메일이나 `https://github.com/notifications`에서 초대를 수락합니다.
 
 ??? failure "BA나 PO 화면에 Approve 선택지가 없어요"
-    자기가 연 PR에는 승인할 수 없습니다. PR을 연 사람이 개발자인지 확인하세요. 또는 **Files changed** 탭에 들어가야 **Review changes** 버튼이 보입니다.
+    자기가 연 PR에는 승인할 수 없습니다. PR을 연 사람이 개발자인지 확인하세요. 또는 **Files changed** 탭에 들어가야 **Submit review**(화면에 따라 **Review changes**) 버튼이 보입니다.
 
 ??? failure "Add a suggestion 아이콘이 안 보여요"
     줄 옆 **+**로 연 댓글 창에서만 보입니다. PR 맨 아래 일반 댓글 칸에는 없습니다. 아이콘을 못 찾으면 댓글에 직접 ```` ```suggestion ````으로 시작하는 블록을 써도 됩니다.
