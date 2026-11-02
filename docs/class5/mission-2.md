@@ -214,7 +214,8 @@ flowchart LR
         Must별 핵심 인수 조건과 결정 요약은 이 태그에 포함된 README의 "MVP 범위"를 봅니다.
         ```
 
-    8. 아래 **Set as the latest release**가 체크되어 있는지 확인합니다.
+    8. 아래 **Release label**(릴리스 표시)이 **None**(없음)으로 골라져 있는지 확인합니다. **Pre-release**(시험판)는 고르지 않습니다. 새로 발행한 릴리스는 자동으로 **Latest**(최신)가 됩니다.
+        - 화면에 따라 **Set as the latest release** 체크박스가 보이면 체크된 상태로 둡니다.
     9. **Publish release**(릴리스 발행)를 클릭합니다.
 
     확인: Releases 화면에 `요구사항 기준선 v1.0`과 초록색 **Latest** 표시가 보이면 성공입니다. 그리고 **Code** 탭 → 분기 선택 버튼(`main`) → **Tags** 탭을 누르면 `v1.0`이 보입니다.
