@@ -179,9 +179,9 @@ flowchart LR
 
     지금 이 커밋이 "요구사항 확정본"입니다. 여기에 `v1.0` 이름표를 붙입니다. 이 태그에는 방금 README에 적은 Must, 인수 조건, 결정 요약이 파일로 함께 고정됩니다. 이슈와 Projects의 값은 태그에 들어가지 않습니다.
 
-    1. 팀 리포지토리 **Code** 탭 오른쪽 사이드바에서 **Releases**를 클릭합니다.
-        - 사이드바에 "No releases published"와 **Create a new release** 링크가 보이면 그 링크를 눌러도 됩니다.
-    2. **Draft a new release**(새 릴리스 작성)를 클릭합니다.
+    1. 팀 리포지토리 **Code** 탭(첫 화면)을 엽니다. 오른쪽 사이드바를 위에서부터 봅니다. **About**(설명), Readme, Activity… 아래에 **Releases** 칸이 있습니다.
+    2. 처음에는 Releases 칸에 `No releases published`(발행한 릴리스 없음)와 파란 **Create a new release**(새 릴리스 만들기) 링크가 있습니다. 이 링크를 클릭하면 바로 작성 화면이 열립니다.
+        - 링크 대신 **Releases** 글자를 누르면 릴리스 목록 화면이 열립니다. 그때는 오른쪽 위 **Draft a new release**(새 릴리스 작성)를 클릭합니다.
     3. **Choose a tag**(태그 고르기)를 클릭하고 칸에 아래를 입력합니다.
 
         ```text
