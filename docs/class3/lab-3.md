@@ -83,7 +83,7 @@ sequenceDiagram
     | 보이는 버튼 | 누를 버튼 |
     |---|---|
     | **Add single comment**와 **Start a review** 두 개 | **Start a review**(리뷰 시작). **Add single comment**(댓글 하나만 달기)는 누르지 않습니다 |
-    | **Cancel**과 초록 버튼 하나 (화면 오른쪽 위에 `Preview` 표시가 있는 새 화면) | 초록 버튼. 새 화면에서는 댓글이 자동으로 리뷰에 모입니다 |
+    | **Cancel**과 초록 **Add review comment** (화면 오른쪽 위에 `Preview` 표시가 있는 새 화면) | **Add review comment**(리뷰 댓글 추가). Start a review와 같은 역할입니다 |
 
     누르면 댓글 창이 닫히고 그 자리에 방금 쓴 댓글이 남습니다. **이 버튼은 댓글을 쓰는 동안에만 보입니다.** 이미 눌러서 댓글에 Pending이 붙었다면 다시 찾을 필요가 없습니다.
 
@@ -99,15 +99,24 @@ sequenceDiagram
 
 STEP 2의 댓글은 아직 대기 중입니다. 리뷰 전체를 한 번에 제출합니다.
 
-1. Files changed 화면 오른쪽 위 초록색 버튼을 클릭합니다. 화면에 따라 **Submit review**(옆에 대기 중인 댓글 수 `1`), **Review changes**, **Finish your review** 중 하나로 보입니다.
-2. 의견 칸에 아래 내용을 입력합니다.
+1. Files changed 화면 오른쪽 위 초록색 버튼(아래 그림 ①)을 클릭합니다. 화면에 따라 **Submit review**(옆에 대기 중인 댓글 수 `1`), **Review changes**, **Finish your review** 중 하나로 보입니다.
+2. **Finish your review**(리뷰 마치기) 창이 열립니다. 아래 그림의 번호 순서대로 합니다.
+
+    ![Finish your review 창. 1 오른쪽 위 Submit review 버튼, 2 의견 칸, 3 Request changes, 4 Pending comments, 5 창 아래 Submit review 버튼](../images/class3/finish-review.png)
+
+    | 번호 | 할 일 |
+    |---|---|
+    | ① | 이 버튼을 눌러 창을 엽니다 |
+    | ② | **Leave a comment** 칸에 리뷰 전체 의견을 씁니다 (아래 코드 블록) |
+    | ③ | 세 가지 중 **Request changes**(수정 요청)를 고릅니다. 기본값은 **Comment**로 골라져 있으니 꼭 바꿉니다 |
+    | ④ | **Pending comments**에서 STEP 2의 제안이 함께 제출되는지 확인합니다. 제안 내용이 이상하면 **Cancel**로 창을 닫고 STEP 2 팁대로 고친 뒤 다시 엽니다 |
+    | ⑤ | 창 아래 **Submit review**(리뷰 제출)를 클릭합니다. **Discard review**(리뷰 버리기)는 대기 중인 댓글까지 모두 지우니 누르지 않습니다 |
+
+    ②에 쓸 의견:
 
     ```text
     전체적으로 좋습니다. 가격 한 군데만 메뉴판과 다르니 제안한 대로 고쳐 주세요.
     ```
-
-3. 세 가지 선택지 중 **Request changes**(수정 요청)를 선택합니다.
-4. **Submit review**(리뷰 제출) 버튼을 클릭합니다.
 
 확인: 짝꿍 PR의 **Conversation** 탭에 내 리뷰가 **requested changes**(수정을 요청함)로 표시되고, 아래 병합 상자에 빨간 표시와 **Changes requested**가 보입니다.
 
