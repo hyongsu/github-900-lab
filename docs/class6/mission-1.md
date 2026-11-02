@@ -25,7 +25,7 @@
 | ① | PM | `진행 보드`에서 대표 스토리를 개발자에게 배정, Status를 In Progress로 | 개발자 |
 | ② | 개발자 | 분기 `story-10`에서 메뉴 2개 추가, 커밋, PR 열기, 리뷰어 지정, 자동 검사 확인 | BA, PO |
 | ③ | BA | 인수 조건 ①~④ 기준으로 검토, **Request changes**와 **Add a suggestion** | 개발자 |
-| ④ | 개발자 | **Commit suggestion**으로 반영, 답글, 다시 리뷰 요청 | BA |
+| ④ | 개발자 | **Apply suggestion**으로 반영, 답글, 다시 리뷰 요청 | BA |
 | ⑤ | BA | **Approve** | PO |
 | ⑥ | PO | 최종 **Approve** | PM |
 | ⑦ | PM | **Squash and merge**, 분기 삭제, 이슈와 `진행 보드` 확인 | PO |
@@ -37,7 +37,7 @@ flowchart LR
     B --> C{"자동 검사<br/>check"}
     C -->|실패| B
     C -->|통과| D["③ BA<br/>인수 조건 ①~④<br/>Request changes + 제안"]
-    D --> E["④ 개발자<br/>Commit suggestion"]
+    D --> E["④ 개발자<br/>Apply suggestion"]
     E --> F["⑤ BA<br/>Approve"]
     F --> G["⑥ PO<br/>최종 Approve"]
     G --> H["⑦ PM<br/>Squash and merge"]
@@ -321,7 +321,7 @@ flowchart LR
     **④ 제안 반영하고 다시 리뷰 요청하기** (BA가 Request changes를 하면)
 
     1. PR의 **Conversation** 탭에서 BA의 제안 댓글을 찾습니다.
-    2. 제안 아래 **Commit suggestion**(제안 반영) 클릭 → 커밋 메시지는 그대로 두고 **Commit changes** 클릭
+    2. 제안 아래 **Apply suggestion**(제안 반영) 클릭 → 커밋 메시지는 그대로 두고 **Commit changes** 클릭
     3. 그 댓글 스레드에 답글을 남기고 **Resolve conversation**(대화 해결) 클릭
 
         ```text
@@ -331,7 +331,7 @@ flowchart LR
     4. 오른쪽 **Reviewers**에서 BA 이름 옆 동그란 화살표 아이콘(**Re-request review**, 다시 리뷰 요청) 클릭
     5. 자동 검사가 다시 초록 체크인지 확인합니다.
 
-    확인: PR에 `Commit suggestion`으로 만든 커밋이 추가되어 있고, BA 이름 옆에 다시 노란 점(리뷰 대기)이 보입니다.
+    확인: PR에 `Apply suggestion`으로 만든 커밋이 추가되어 있고, BA 이름 옆에 다시 노란 점(리뷰 대기)이 보입니다.
 
     **기다리는 동안 할 일**
 
@@ -344,7 +344,7 @@ flowchart LR
 - [x] 분기 `story-10`(우리 팀 번호)에서 PR이 열렸고, 본문에 `Closes #10`과 인수 조건 ①~④ 체크리스트가 있다
 - [x] PR에 자동 검사 `check` 초록 체크가 있다
 - [x] PR에 인수 조건과 연결된 BA의 Request changes 1회 이상, Add a suggestion 1개 이상이 있다
-- [x] 개발자가 Commit suggestion으로 반영하고 다시 리뷰를 요청했다
+- [x] 개발자가 Apply suggestion으로 반영하고 다시 리뷰를 요청했다
 - [x] BA와 PO가 Approve했다
 - [x] PM이 Squash and merge로 병합하고 분기를 삭제했다
 - [x] 이슈가 자동으로 Closed 되었다

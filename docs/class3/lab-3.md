@@ -2,7 +2,7 @@
 
 !!! abstract "이번 실습에서 할 것"
     - 짝꿍의 PR에 줄 단위 댓글과 **변경 제안**을 남기고 **Request changes**로 수정을 요청합니다.
-    - 내 PR에 온 변경 제안을 **Commit suggestion**으로 반영하고 다시 리뷰를 요청합니다.
+    - 내 PR에 온 변경 제안을 **Apply suggestion**으로 반영하고 다시 리뷰를 요청합니다.
     - 짝꿍의 **Approve**를 받은 뒤 **Squash and merge**로 `main`에 합치고 분기를 지웁니다.
 
 **소요 시간** 약 5분  **실습 장소** 짝꿍의 리포지토리(검토자 역할)와 내 리포지토리 `lunch-practice`(작성자 역할)  **관련 교안** [3교시 교안](index.md#review-types)
@@ -28,7 +28,7 @@ sequenceDiagram
     작성자->>PR: PR 열기, 검토 요청 (3-2)
     검토자->>PR: 변경 제안 + Request changes
     PR-->>작성자: 수정 요청 알림
-    작성자->>PR: Commit suggestion, Re-request review
+    작성자->>PR: Apply suggestion, Re-request review
     검토자->>PR: Approve
     작성자->>PR: Squash and merge, Delete branch
 ```
@@ -129,14 +129,15 @@ STEP 2의 댓글은 아직 대기 중입니다. 리뷰 전체를 한 번에 제�
 
 1. 내 리포지토리 **Pull requests** 탭 → `메뉴 추가: 비빔밥` PR을 클릭합니다.
 2. **Conversation** 탭에서 짝꿍의 리뷰와 suggestion 댓글을 찾습니다.
-3. 제안 아래 **Commit suggestion**(제안 반영) 버튼을 클릭합니다.
-4. 커밋 메시지는 기본값(`Update site/menus.json`)이나 아래 내용으로 씁니다.
+3. 반영하기 전에 `Suggested change`의 빨간 줄과 초록 줄을 비교합니다. **가격 숫자만** 달라야 합니다. 메뉴 이름까지 바뀌어 있으면 반영하지 말고, 아래 **Reply...** 칸에 "메뉴 이름이 바뀌어 있어요. 가격만 고쳐 주세요."라고 남겨 짝꿍에게 제안을 고쳐 달라고 합니다.
+4. 제안 상자 오른쪽 아래 **Apply suggestion**(제안 반영) 버튼을 클릭합니다. (예전 화면에서는 **Commit suggestion**입니다.) 옆의 **Add suggestion to batch**(여러 제안 한꺼번에 반영)는 제안이 여러 개일 때 쓰는 버튼이라 지금은 누르지 않습니다.
+5. **Apply suggestion** 작은 창이 열립니다. 첫 칸의 커밋 메시지 기본값 `Update site/menus.json`을 지우고 아래처럼 씁니다.
 
     ```text
-    리뷰 반영: 비빔밥 가격 8500원
+    리뷰 반영: 가격 8500원
     ```
 
-5. **Commit changes** 버튼을 클릭합니다.
+6. 창 아래 **Commit changes** 버튼을 클릭합니다.
 
 확인: suggestion 댓글에 **Outdated**(이미 바뀜) 표시가 붙고, Conversation 탭 아래에 새 커밋이 추가되었습니다. 자동 검사가 다시 돌아 초록 체크가 됩니다.
 
@@ -199,7 +200,7 @@ STEP 2의 댓글은 아직 대기 중입니다. 리뷰 전체를 한 번에 제�
 ## 성공하면
 
 - [x] 짝꿍 PR에 변경 제안과 **Request changes** 리뷰를 남겼고, 이어서 **Approve**했다
-- [x] 내 PR에 온 변경 제안을 **Commit suggestion**으로 반영했다
+- [x] 내 PR에 온 변경 제안을 **Apply suggestion**으로 반영했다
 - [x] 내 PR이 보라색 **Merged** 상태이고, `add-menu` 분기는 지워졌다
 - [x] `main`의 `menus.json`에 메뉴가 N+1개(처음 메모한 N개보다 1개 많음)이고, 웹페이지에도 새 메뉴가 보인다
 
@@ -221,7 +222,7 @@ STEP 2의 댓글은 아직 대기 중입니다. 리뷰 전체를 한 번에 제�
     ```
     ````
 
-??? failure "Commit suggestion 버튼이 안 보이거나 눌리지 않아요"
+??? failure "Apply suggestion 버튼이 안 보이거나 눌리지 않아요"
     - 검토자가 리뷰를 아직 **Submit** 하지 않았으면 작성자에게 보이지 않습니다. 짝꿍에게 STEP 3을 마쳤는지 물어보세요.
     - 이미 반영했거나 그 줄이 다른 커밋으로 바뀌었으면 **Outdated**가 되어 버튼이 사라집니다. 이때는 Files changed에서 직접 고치면 됩니다.
 

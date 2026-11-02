@@ -164,7 +164,7 @@ scripts/check-menus.js         메뉴 데이터 검사. 성공 "[통과] 메뉴 
 
 - "~합니다" 체. 짧게. 수강생에게 말하듯 쉽게. 전문 용어는 처음 나올 때 풀어 쓴다.
 - 가운뎃점(·) 쓰지 않는다. 나열은 쉼표. 이모지 쓰지 않는다.
-- 영어 메뉴 이름은 GitHub 화면 그대로 (Settings, Issues, Pull requests, Actions, Projects, Code, Commit changes, Create pull request, Merge pull request, Squash and merge, Files changed, Review changes, Approve, Request changes, Add a suggestion, Commit suggestion, Resolve conflicts, Mark as resolved, Revert, Releases, Draft a new release, Blame, History, New issue, Labels, Milestones, Assignees, Create sub-issue, Use this template, Create a new repository, Collaborators, Add people, Pages, Rulesets 등).
+- 영어 메뉴 이름은 GitHub 화면 그대로 (Settings, Issues, Pull requests, Actions, Projects, Code, Commit changes, Create pull request, Merge pull request, Squash and merge, Files changed, Review changes, Approve, Request changes, Add a suggestion, Apply suggestion, Resolve conflicts, Mark as resolved, Revert, Releases, Draft a new release, Blame, History, New issue, Labels, Milestones, Assignees, Create sub-issue, Use this template, Create a new repository, Collaborators, Add people, Pages, Rulesets 등).
 - 화면이 GitHub 업데이트로 조금 다를 수 있다는 안내는 setup 페이지에 있으니 페이지마다 반복하지 않는다.
 
 ## 7. 검증
