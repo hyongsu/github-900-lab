@@ -1,6 +1,6 @@
 # GH-900 실습 가이드 작성 규칙
 
-GitHub 기초(GH-900) 1일 과정의 MkDocs 교안 겸 실습 가이드다. 수강생은 **GitHub를 처음 쓰는 PM, BA, IT기획, 운영 담당자 21명**이다. 개발 경험이 없다고 가정하고, 클릭 하나까지 적는다. 수업은 강사 화면(PPT)과 이 가이드를 나란히 보며 진행한다.
+GitHub 기초(GH-900) 1일 과정의 MkDocs 교안 겸 실습 가이드다. 수강생은 **GitHub를 처음 쓰는 PM, BA, IT기획, 운영 담당자 14명**이다 (짝 7쌍, 4인 2팀과 3인 2팀). 개발 경험이 없다고 가정하고, 클릭 하나까지 적는다. 수업은 강사 화면(PPT)과 이 가이드를 나란히 보며 진행한다.
 
 ## 1. 원천 자료
 
@@ -39,7 +39,7 @@ GitHub 기초(GH-900) 1일 과정의 MkDocs 교안 겸 실습 가이드다. 수�
 | Starter 템플릿 | `skilleat-labs/lunch-picker-starter` (주소 `https://github.com/skilleat-labs/lunch-picker-starter`) |
 | 첫 연습 리포지토리 (1-1만) | `my-first-repo` (Public, Add README 켬). 이후 교시에서 쓰지 않는다 |
 | 개인 연습 리포지토리 (1-2~4교시, 7-1) | `lunch-practice` (Public) |
-| 팀 리포지토리 (4-3 이후) | `lunch-picker-team1` ~ `lunch-picker-team6` (PO가 만듦, Public) |
+| 팀 리포지토리 (4-3 이후) | `lunch-picker-team1` ~ `lunch-picker-team4` (PO가 만듦, Public) |
 | 개인 Projects | `내 연습 보드` |
 | 팀 Projects | `점심 메뉴 추천 팀1` (번호는 팀 번호) |
 | 개인 라벨 (2-2) | `기능`, `질문`, `우선순위-상`, `우선순위-중`, `우선순위-하` |
