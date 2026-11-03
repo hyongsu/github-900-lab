@@ -317,6 +317,17 @@ flowchart TB
 !!! tip "핵심"
     지우지 말고, 취소하는 기록을 남긴다.
 
+!!! note "더 알아보기: 기록 지우기를 아예 막아 두기 (Block force pushes)"
+    reset으로 지운 기록을 GitHub에 올리려면 **force push**(강제로 덮어쓰기)가 필요합니다. 리포지토리 관리자는 이것을 main에서 못 하게 막아 둘 수 있습니다. 오늘 실습에서는 하지 않고, 위치만 알아 둡니다.
+
+    1. 리포지토리 **Settings** → 왼쪽 메뉴 **Rules** → **Rulesets**를 클릭합니다.
+    2. **New ruleset** → **New branch ruleset**을 클릭합니다.
+    3. **Ruleset Name**에 이름(예: `protect-main`)을 입력하고, **Enforcement status**를 **Active**로 바꿉니다. Disabled로 두면 동작하지 않습니다.
+    4. **Target branches**에서 **Add target** → **Include default branch**를 골라 main을 대상으로 정합니다.
+    5. 아래 **Branch rules** 목록에서 **Block force pushes**가 체크되어 있는지 확인하고 **Create**를 클릭합니다.
+
+    같은 목록의 **Require a pull request before merging**을 함께 체크하면 main에 직접 커밋하지 못하고 PR로만 합치게 됩니다. 예전 화면(**Settings** → **Branches** → **Add classic branch protection rule**)에서는 이름이 **Allow force pushes**이고, 체크하지 않은 상태가 막힌 상태입니다.
+
 ### Blame은 줄마다 누가 언제 바꿨는지 보여 줍니다 {#blame}
 
 **Blame**은 파일의 줄마다 **마지막으로** 누가, 언제, 어떤 커밋으로 바꿨는지 보여 주는 화면입니다. 파일을 연 뒤 위쪽의 **Blame** 버튼을 누르면 됩니다. 이름이 "탓하기"라서 무섭게 들리지만, 실제로는 "이 줄은 누구에게 물어보면 되지?"를 찾는 기능입니다.
